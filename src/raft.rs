@@ -83,7 +83,7 @@ pub struct SoftState {
     /// The potential leader of the cluster.
     pub leader_id: u64,
     /// The soft role this node may take.
-    pub raft_state: StateRole,
+    pub  : StateRole,
 }
 
 /// A struct that represents the raft consensus itself. Stores details concerning the current
@@ -204,6 +204,9 @@ pub struct Raft<T: Storage> {
 
     /// Tag is only used for logging
     tag: String,
+
+    /// TODO:
+    priority: u64,
 }
 
 trait AssertSend: Send {}

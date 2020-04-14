@@ -76,6 +76,7 @@ message Message {
     bool reject = 10;
     uint64 reject_hint = 11;
     bytes context = 12;
+    uint64 priority = 13;
 }
 
 message HardState {
